@@ -9,7 +9,7 @@ public class AuctionSystem1b {
 
         Scanner input = new Scanner(System.in);
 
-        // ---------------- VEHICLE DETAILS ----------------
+        //  VEHICLE DETAILS
         System.out.println("===== SK MOTORS VEHICLE DETAILS =====");
 
         System.out.print("Enter Vehicle Registration Number: ");
@@ -21,7 +21,7 @@ public class AuctionSystem1b {
         System.out.print("Enter Balance Left on Vehicle: ");
         double balanceLeft = input.nextDouble();
 
-        // ---------------- BIDDERS ----------------
+        // BIDDERS
         String highestBidder = "";
         double highestBid = 0;
 
@@ -42,7 +42,7 @@ public class AuctionSystem1b {
             }
         }
 
-        // ---------------- FINANCIAL DETAILS ----------------
+        // FINANCIAL DETAILS
         System.out.println("\n===== FINANCIAL DETAILS =====");
 
         System.out.print("Enter Total Deposits Made: ");
@@ -51,12 +51,12 @@ public class AuctionSystem1b {
         System.out.print("Enter Total Expenses Incurred: ");
         double expenses = input.nextDouble();
 
-        // ---------------- CALCULATIONS ----------------
+        // CALCULATIONS
         double totalIncome = highestBid + deposits;
         double totalCost = vehicleCost + expenses;
         double profitOrLoss = totalIncome - totalCost;
 
-        // ---------------- OUTPUT ----------------
+        // OUTPUT
         System.out.println("\n===== AUCTION RESULT =====");
         System.out.println("Vehicle Registration: " + regNumber);
         System.out.println("Winning Bidder: " + highestBidder);
